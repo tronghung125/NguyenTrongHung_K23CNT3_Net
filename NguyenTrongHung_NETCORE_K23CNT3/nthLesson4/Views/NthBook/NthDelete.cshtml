@@ -1,0 +1,11 @@
+﻿@model nthLesson4.Models.NthBook
+
+<h2>Xác nhận xoá sách</h2>
+
+<p>Bạn có chắc chắn muốn xoá sách: <strong>@Model.NthTitle</strong> không?</p>
+
+<form asp-action="NthDelete">
+    <input type="hidden" asp-for="NthId" />
+    <button type="submit" class="btn btn-danger">Xoá</button>
+    <a asp-action="NthIndex" class="btn btn-secondary">Huỷ</a>
+</form>

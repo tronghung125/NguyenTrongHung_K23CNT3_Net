@@ -1,0 +1,12 @@
+﻿@model nthLesson4.Models.NthBook
+
+<h2>Thêm Sách Mới</h2>
+<form asp-action="NthCreateSubmit" method="post">
+    <div><label>Mã sách:</label> <input asp-for="NthId" /></div>
+    <div><label>Tiêu đề:</label> <input asp-for="NthTitle" /></div>
+    <div><label>Mô tả:</label> <textarea asp-for="NthDecription"></textarea></div>
+    <div><label>Ảnh:</label> <input asp-for="NthImage" /></div>
+    <div><label>Giá:</label> <input asp-for="NthPrice" /></div>
+    <div><label>Số trang:</label> <input asp-for="NthPage" /></div>
+    <button type="submit">Thêm sách</button>
+</form>
