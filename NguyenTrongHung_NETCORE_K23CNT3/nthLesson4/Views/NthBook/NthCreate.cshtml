@@ -1,12 +1,30 @@
 ﻿@model nthLesson4.Models.NthBook
 
-<h2>Thêm Sách Mới</h2>
+<h2>Thêm sách mới</h2>
 <form asp-action="NthCreateSubmit" method="post">
-    <div><label>Mã sách:</label> <input asp-for="NthId" /></div>
-    <div><label>Tiêu đề:</label> <input asp-for="NthTitle" /></div>
-    <div><label>Mô tả:</label> <textarea asp-for="NthDecription"></textarea></div>
-    <div><label>Ảnh:</label> <input asp-for="NthImage" /></div>
-    <div><label>Giá:</label> <input asp-for="NthPrice" /></div>
-    <div><label>Số trang:</label> <input asp-for="NthPage" /></div>
-    <button type="submit">Thêm sách</button>
+    <div>
+        <label>Mã sách</label>
+        <input asp-for="NthId" class="form-control" />
+    </div>
+    <div>
+        <label>Tiêu đề</label>
+        <input asp-for="NthTitle" class="form-control" />
+    </div>
+    <div>
+        <label>Mô tả</label>
+        <textarea asp-for="NthDecription" class="form-control"></textarea>
+    </div>
+    <div>
+        <label>Ảnh (đường dẫn)</label>
+        <input asp-for="NthImage" class="form-control" />
+    </div>
+    <div>
+        <label>Giá</label>
+        <input asp-for="NthPrice" class="form-control" />
+    </div>
+    <div>
+        <label>Số trang</label>
+        <input asp-for="NthPage" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary">Lưu</button>
 </form>

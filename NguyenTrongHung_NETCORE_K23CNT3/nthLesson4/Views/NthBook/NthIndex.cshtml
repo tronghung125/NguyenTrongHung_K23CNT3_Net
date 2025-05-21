@@ -3,16 +3,18 @@
     ViewData["Title"] = "List Book";
 }
 
-<h1>Thông tin các cuốn sách</h1>
+<h1 class="mb-4">📚 Thông tin các cuốn sách</h1>
 <a asp-action="NthCreate" class="btn btn-success mb-3">➕ Thêm sách</a>
-<table class="table table-bordered">
-    <thead>
+
+<table class="table table-bordered table-striped text-center align-middle">
+    <thead class="table-dark">
         <tr>
-            <th>BookId</th>
-            <th>Title</th>
-            <th>Description</th>
-            <th>Image</th>
-            <th>Price</th>
+            <th>Mã sách</th>
+            <th>Tiêu đề</th>
+            <th>Mô tả</th>
+            <th>Ảnh</th>
+            <th>Giá</th>
+            <th>Chức năng</th>
         </tr>
     </thead>
     <tbody>
@@ -25,9 +27,9 @@
                 <td>
                     <img src="@Url.Content(nthItem.NthImage)" alt="@nthItem.NthTitle" style="width:100px; height:150px;" />
                 </td>
-                <td>@nthItem.NthPrice</td>
+                <td>@nthItem.NthPrice.ToString("C")</td>
                 <td>
-                    <a asp-action="NthEdit" asp-route-id="@nthItem.NthId" class="btn btn-warning btn-sm">✏️ Sửa</a>
+                    <a asp-action="NthEdit" asp-route-id="@nthItem.NthId" class="btn btn-warning btn-sm me-1">✏️ Sửa</a>
                     <a asp-action="NthDelete" asp-route-id="@nthItem.NthId" class="btn btn-danger btn-sm" onclick="return confirm('Bạn có chắc chắn muốn xoá không?');">🗑️ Xoá</a>
                 </td>
             </tr>

@@ -103,7 +103,7 @@ namespace Lesson04.Controllers
             return View(book);
         }
         [HttpPost]
-        public IActionResult NthDeleteConfirm(string id)
+        public IActionResult NthDeleteSubmit(string id)
         {
             var book = nthBooks.FirstOrDefault(b => b.NthId == id);
             if (book != null)

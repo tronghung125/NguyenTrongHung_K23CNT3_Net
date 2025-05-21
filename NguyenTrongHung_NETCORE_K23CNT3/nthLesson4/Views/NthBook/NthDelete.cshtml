@@ -1,11 +1,16 @@
 ﻿@model nthLesson4.Models.NthBook
+@{
+    ViewData["Title"] = "Xoá sách";
+}
 
-<h2>Xác nhận xoá sách</h2>
+<h2 class="text-danger">🗑️ Xác nhận xoá sách</h2>
 
-<p>Bạn có chắc chắn muốn xoá sách: <strong>@Model.NthTitle</strong> không?</p>
+<div class="alert alert-warning">
+    <p>Bạn có chắc chắn muốn xoá cuốn sách <strong>@Model.NthTitle</strong> (ID: @Model.NthId) không?</p>
+</div>
 
-<form asp-action="NthDelete">
+<form asp-action="NthDeleteSubmit" method="post">
     <input type="hidden" asp-for="NthId" />
-    <button type="submit" class="btn btn-danger">Xoá</button>
-    <a asp-action="NthIndex" class="btn btn-secondary">Huỷ</a>
+    <button type="submit" class="btn btn-danger">✔️ Đồng ý xoá</button>
+    <a asp-action="NthIndex" class="btn btn-secondary">❌ Huỷ</a>
 </form>

@@ -225,3 +225,4 @@ D:\NetCore\NguyenTrongHung_NETCORE_K23CNT3\nthLesson4\obj\Debug\net8.0\refint\nt
 D:\NetCore\NguyenTrongHung_NETCORE_K23CNT3\nthLesson4\obj\Debug\net8.0\nthLesson4.pdb
 D:\NetCore\NguyenTrongHung_NETCORE_K23CNT3\nthLesson4\obj\Debug\net8.0\nthLesson4.genruntimeconfig.cache
 D:\NetCore\NguyenTrongHung_NETCORE_K23CNT3\nthLesson4\obj\Debug\net8.0\ref\nthLesson4.dll
+D:\NetCore\NguyenTrongHung_NETCORE_K23CNT3\nthLesson4\obj\Debug\net8.0\nthLesson4.sourcelink.json

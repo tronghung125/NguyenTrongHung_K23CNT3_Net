@@ -1,0 +1,31 @@
+﻿@model IEnumerable<nthLesson5.Models.DataModels.NthMember>
+
+@{
+    ViewData["Title"] = "NthIndex";
+}
+
+<h1>Danh sách Member</h1>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Username</th>
+            <th>Password</th>
+            <th>Fullname</th>
+            <th>Email</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var nthItem in Model)
+        {
+            <tr>
+                <td>@nthItem.NthMemberID</td>
+                <td>@nthItem.NthUsername</td>
+                <td>@nthItem.NthPassword</td>
+                <td>@nthItem.NthFullname</td>
+                <td>@nthItem.NthEmail</td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,12 +1,38 @@
 ﻿@model nthLesson4.Models.NthBook
+@{
+    ViewData["Title"] = "Sửa sách";
+}
 
-<h2>Chỉnh sửa Sách</h2>
+<h2>✏️ Sửa thông tin sách</h2>
+
 <form asp-action="NthEditSubmit" method="post">
     <input type="hidden" asp-for="NthId" />
-    <div><label>Tiêu đề:</label> <input asp-for="NthTitle" /></div>
-    <div><label>Mô tả:</label> <textarea asp-for="NthDecription"></textarea></div>
-    <div><label>Ảnh:</label> <input asp-for="NthImage" /></div>
-    <div><label>Giá:</label> <input asp-for="NthPrice" /></div>
-    <div><label>Số trang:</label> <input asp-for="NthPage" /></div>
-    <button type="submit">Lưu thay đổi</button>
+
+    <div class="mb-3">
+        <label class="form-label">Tiêu đề</label>
+        <input asp-for="NthTitle" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Mô tả</label>
+        <textarea asp-for="NthDecription" class="form-control"></textarea>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Đường dẫn ảnh</label>
+        <input asp-for="NthImage" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Giá</label>
+        <input asp-for="NthPrice" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Số trang</label>
+        <input asp-for="NthPage" class="form-control" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">💾 Lưu thay đổi</button>
+    <a asp-action="NthIndex" class="btn btn-secondary">⬅️ Quay lại</a>
 </form>
