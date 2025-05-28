@@ -1,0 +1,52 @@
+﻿@model nthLesson6.Models.NthEmployee
+
+@{
+    ViewData["Title"] = "Chỉnh sửa nhân viên";
+}
+
+<h2>Chỉnh sửa nhân viên</h2>
+
+<form asp-action="NthEditSubmit" method="post">
+    <div class="form-group">
+        <label asp-for="NthId">ID</label>
+        <input asp-for="NthId" class="form-control" readonly />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="NthName">Họ tên</label>
+        <input asp-for="NthName" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="NthBirthDay">Ngày sinh</label>
+        <input asp-for="NthBirthDay" type="date" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="NthEmail">Email</label>
+        <input asp-for="NthEmail" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="NthPhone">Số điện thoại</label>
+        <input asp-for="NthPhone" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="NthSalary">Lương</label>
+        <input asp-for="NthSalary" class="form-control" type="number" />
+    </div>
+
+    <div class="form-group form-check">
+        <input asp-for="NthStatus" class="form-check-input" />
+        <label asp-for="NthStatus" class="form-check-label">Đang làm việc</label>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Cập nhật</button>
+    <a asp-action="NthIndex" class="btn btn-secondary">Quay lại</a>
+</form>
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

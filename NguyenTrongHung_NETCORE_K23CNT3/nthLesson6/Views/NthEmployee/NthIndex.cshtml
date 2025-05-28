@@ -1,0 +1,48 @@
+﻿@model IEnumerable<nthLesson6.Models.NthEmployee>
+
+@{
+    ViewData["Title"] = "Danh sách nhân viên";
+}
+
+<div class="">
+    <h2>Danh sách nhân viên</h2>
+
+    <a asp-action="NthCreate" class="btn btn-success mb-3">➕ Thêm nhân viên</a>
+
+    <table class="table table-bordered table-hover table-striped">
+        <thead class="alert alert-success">
+            <tr>
+                <th>ID</th>
+                <th>Họ tên</th>
+                <th>Ngày sinh</th>
+                <th>Email</th>
+                <th>Điện thoại</th>
+                <th>Lương</th>
+                <th>Trạng thái</th>
+                <th>Hành động</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var nthEmp in Model)
+            {
+                <tr>
+                    <td>@nthEmp.NthId</td>
+                    <td>@nthEmp.NthName</td>
+                    <td>@nthEmp.NthBirthDay.ToString("dd/MM/yyyy")</td>
+                    <td>@nthEmp.NthEmail</td>
+                    <td>@nthEmp.NthPhone</td>
+                    <td>@nthEmp.NthSalary.ToString("N0") VNĐ</td>
+                    <td>
+                        <span class="badge @(nthEmp.NthStatus ? "bg-success" : "bg-secondary")">
+                            @(nthEmp.NthStatus ? "Đang làm" : "Nghỉ việc")
+                        </span>
+                    </td>
+                    <td>
+                        <a asp-action="NthEdit" asp-route-nthId="@nthEmp.NthId" class="btn btn-warning btn-sm">✏️ Sửa</a>
+                        <a asp-action="NthDelete" asp-route-nthId="@nthEmp.NthId" class="btn btn-danger btn-sm" onclick="return confirm('Bạn có chắc muốn xoá nhân viên này?');">🗑️ Xoá</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

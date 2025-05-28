@@ -1,0 +1,59 @@
+﻿@model nthLesson6.Models.NthEmployee
+
+@{
+    ViewData["Title"] = "Thêm mới nhân viên";
+}
+
+<h2>Thêm mới nhân viên</h2>
+
+<form asp-action="NthCreateSubmit" method="post" class="mt-3">
+    <div class="form-group">
+        <label asp-for="NthId">ID</label>
+        <input asp-for="NthId" class="form-control" />
+        <span asp-validation-for="NthId" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="NthName">Họ tên</label>
+        <input asp-for="NthName" class="form-control" />
+        <span asp-validation-for="NthName" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="NthBirthDay">Ngày sinh</label>
+        <input asp-for="NthBirthDay" class="form-control" type="date" />
+        <span asp-validation-for="NthBirthDay" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="NthEmail">Email</label>
+        <input asp-for="NthEmail" class="form-control" />
+        <span asp-validation-for="NthEmail" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="NthPhone">SĐT</label>
+        <input asp-for="NthPhone" class="form-control" />
+        <span asp-validation-for="NthPhone" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="NthSalary">Lương</label>
+        <input asp-for="NthSalary" class="form-control" type="number" step="1000" />
+        <span asp-validation-for="NthSalary" class="text-danger"></span>
+    </div>
+
+    <div class="form-group form-check">
+        <input asp-for="NthStatus" class="form-check-input" />
+        <label asp-for="NthStatus" class="form-check-label"> Đang làm việc</label>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Lưu</button>
+    <a asp-action="NthIndex" class="btn btn-secondary">Quay lại</a>
+</form>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
