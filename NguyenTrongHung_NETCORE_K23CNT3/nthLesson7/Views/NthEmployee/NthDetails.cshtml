@@ -1,0 +1,59 @@
+﻿@model nthLesson7.Models.NthEmployee
+
+@{
+    ViewData["Title"] = "Thông tin chi tiết";
+}
+
+<h1>Thông tin chi tiết</h1>
+
+<div>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NthId)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NthId)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NthName)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NthName)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NthBirthDay)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NthBirthDay)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NthEmail)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NthEmail)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NthPhone)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NthPhone)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NthSalary)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NthSalary)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NthStatus)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NthStatus)
+        </dd>
+    </dl>
+</div>
+<div>
+    @Html.ActionLink("NthEdit", "NthEdit", new { id = Model.NthId }) |
+    <a asp-action="NthIndex">Back to List</a>
+</div>

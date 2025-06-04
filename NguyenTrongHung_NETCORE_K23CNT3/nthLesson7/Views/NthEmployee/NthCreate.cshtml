@@ -1,0 +1,58 @@
+﻿@model nthLesson7.Models.NthEmployee
+
+@{
+    ViewData["Title"] = "Thêm nhân viên mới";
+}
+
+<h1>Thêm nhân viên mới</h1>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="NthCreate">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="NthId" class="control-label"></label>
+                <input asp-for="NthId" class="form-control" />
+                <span asp-validation-for="NthId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NthName" class="control-label"></label>
+                <input asp-for="NthName" class="form-control" />
+                <span asp-validation-for="NthName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NthBirthDay" class="control-label"></label>
+                <input asp-for="NthBirthDay" class="form-control" />
+                <span asp-validation-for="NthBirthDay" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NthEmail" class="control-label"></label>
+                <input asp-for="NthEmail" class="form-control" />
+                <span asp-validation-for="NthEmail" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NthPhone" class="control-label"></label>
+                <input asp-for="NthPhone" class="form-control" />
+                <span asp-validation-for="NthPhone" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NthSalary" class="control-label"></label>
+                <input asp-for="NthSalary" class="form-control" />
+                <span asp-validation-for="NthSalary" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="NthStatus" /> @Html.DisplayNameFor(model => model.NthStatus)
+                </label>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="NthCreate" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="NthIndex">Back to List</a>
+</div>
+

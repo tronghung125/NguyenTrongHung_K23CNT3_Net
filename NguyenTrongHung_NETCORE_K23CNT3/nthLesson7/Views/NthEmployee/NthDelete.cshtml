@@ -1,0 +1,62 @@
+﻿@model nthLesson7.Models.NthEmployee
+
+@{
+    ViewData["Title"] = "Xoá nhân viên";
+}
+
+<h1>Xoá nhân viên ?</h1>
+
+<div>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NthId)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NthId)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NthName)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NthName)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NthBirthDay)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NthBirthDay)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NthEmail)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NthEmail)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NthPhone)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NthPhone)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NthSalary)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NthSalary)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.NthStatus)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NthStatus)
+        </dd>
+    </dl>
+
+    <form asp-action="NthDelete" method="post">
+        <input type="hidden" asp-for="NthId" />
+        <button type="submit" class="btn btn-danger">Xoá</button>
+        <a asp-action="NthIndex" class="btn btn-secondary">Quay lại</a>
+    </form>
+
+</div>
