@@ -1,0 +1,89 @@
+﻿@model IEnumerable<nthLesson8Annotation.Models.NthAccount>
+
+@{
+    ViewData["Title"] = "NthIndex";
+}
+
+<h1>NthIndex</h1>
+
+<p>
+    <a asp-action="NthCreate" class="btn btn-success    ">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.NthId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NthFullName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NthEmail)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NthPhone)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NthAddress)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NthAvatar)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NthBirthday)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NthGender)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NthPassword)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NthFacebook)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.NthId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NthFullName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NthEmail)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NthPhone)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NthAddress)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NthAvatar)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NthBirthday)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NthGender)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NthPassword)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NthFacebook)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

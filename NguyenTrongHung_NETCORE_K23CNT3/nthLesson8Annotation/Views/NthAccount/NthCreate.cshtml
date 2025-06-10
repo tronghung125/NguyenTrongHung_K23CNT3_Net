@@ -1,0 +1,75 @@
+﻿@model nthLesson8Annotation.Models.NthAccount
+
+@{
+    ViewData["Title"] = "NthCreate";
+}
+
+<h1>NthCreate</h1>
+
+<h4>NthAccount</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="NthCreate">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="NthId" class="control-label"></label>
+                <input asp-for="NthId" class="form-control" />
+                <span asp-validation-for="NthId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NthFullName" class="control-label"></label>
+                <input asp-for="NthFullName" class="form-control" />
+                <span asp-validation-for="NthFullName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NthEmail" class="control-label"></label>
+                <input asp-for="NthEmail" class="form-control" />
+                <span asp-validation-for="NthEmail" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NthPhone" class="control-label"></label>
+                <input asp-for="NthPhone" class="form-control" />
+                <span asp-validation-for="NthPhone" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NthAddress" class="control-label"></label>
+                <input asp-for="NthAddress" class="form-control" />
+                <span asp-validation-for="NthAddress" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NthAvatar" class="control-label"></label>
+                <input asp-for="NthAvatar" class="form-control" />
+                <span asp-validation-for="NthAvatar" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NthBirthday" class="control-label"></label>
+                <input asp-for="NthBirthday" class="form-control" />
+                <span asp-validation-for="NthBirthday" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NthGender" class="control-label"></label>
+                <input asp-for="NthGender" class="form-control" />
+                <span asp-validation-for="NthGender" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NthPassword" class="control-label"></label>
+                <input asp-for="NthPassword" class="form-control" />
+                <span asp-validation-for="NthPassword" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NthFacebook" class="control-label"></label>
+                <input asp-for="NthFacebook" class="form-control" />
+                <span asp-validation-for="NthFacebook" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

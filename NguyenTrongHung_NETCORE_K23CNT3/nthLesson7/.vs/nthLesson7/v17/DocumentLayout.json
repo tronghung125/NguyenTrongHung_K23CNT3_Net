@@ -3,47 +3,47 @@
   "WorkspaceRootPath": "D:\\NetCore\\NguyenTrongHung_NETCORE_K23CNT3\\nthLesson7\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2A11D451-9065-45AC-BE56-1F8CCD283B01}|nthLesson7.csproj|d:\\netcore\\nguyentronghung_netcore_k23cnt3\\nthlesson7\\controllers\\nthemployeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2A11D451-9065-45AC-BE56-1F8CCD283B01}|nthLesson7.csproj|solutionrelative:controllers\\nthemployeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2A11D451-9065-45AC-BE56-1F8CCD283B01}|nthLesson7.csproj|d:\\netcore\\nguyentronghung_netcore_k23cnt3\\nthlesson7\\views\\nthemployee\\nthdelete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{2A11D451-9065-45AC-BE56-1F8CCD283B01}|nthLesson7.csproj|solutionrelative:views\\nthemployee\\nthdelete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A11D451-9065-45AC-BE56-1F8CCD283B01}|nthLesson7.csproj|d:\\netcore\\nguyentronghung_netcore_k23cnt3\\nthlesson7\\controllers\\nthemployeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A11D451-9065-45AC-BE56-1F8CCD283B01}|nthLesson7.csproj|solutionrelative:controllers\\nthemployeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
-      "VerticalTabListWidth": 256,
+      "VerticalTabListWidth": 154,
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "NthDelete.cshtml",
               "DocumentMoniker": "D:\\NetCore\\NguyenTrongHung_NETCORE_K23CNT3\\nthLesson7\\Views\\NthEmployee\\NthDelete.cshtml",
               "RelativeDocumentMoniker": "Views\\NthEmployee\\NthDelete.cshtml",
               "ToolTip": "D:\\NetCore\\NguyenTrongHung_NETCORE_K23CNT3\\nthLesson7\\Views\\NthEmployee\\NthDelete.cshtml",
               "RelativeToolTip": "Views\\NthEmployee\\NthDelete.cshtml",
-              "ViewState": "AgIAACoAAAAAAAAAAAAWwDwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-04T02:49:34.158Z",
+              "WhenOpened": "2025-06-04T03:51:59.078Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "NthEmployeeController.cs",
               "DocumentMoniker": "D:\\NetCore\\NguyenTrongHung_NETCORE_K23CNT3\\nthLesson7\\Controllers\\NthEmployeeController.cs",
               "RelativeDocumentMoniker": "Controllers\\NthEmployeeController.cs",
               "ToolTip": "D:\\NetCore\\NguyenTrongHung_NETCORE_K23CNT3\\nthLesson7\\Controllers\\NthEmployeeController.cs",
               "RelativeToolTip": "Controllers\\NthEmployeeController.cs",
-              "ViewState": "AgIAAIkAAAAAAAAAAAAmwJkAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-04T01:42:14.425Z",
+              "WhenOpened": "2025-06-04T03:51:57.355Z",
               "EditorCaption": ""
             }
           ]
