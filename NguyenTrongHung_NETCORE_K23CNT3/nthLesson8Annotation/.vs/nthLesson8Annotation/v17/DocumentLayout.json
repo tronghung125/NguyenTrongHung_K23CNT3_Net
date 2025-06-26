@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "D:\\NetCore\\NguyenTrongHung_NETCORE_K23CNT3\\nthLesson8Annotation\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{B63AE34C-19FB-4921-BDCF-9149D6EC6925}|nthLesson8Annotation.csproj|d:\\netcore\\nguyentronghung_netcore_k23cnt3\\nthlesson8annotation\\views\\nthhome\\nthabout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B63AE34C-19FB-4921-BDCF-9149D6EC6925}|nthLesson8Annotation.csproj|solutionrelative:views\\nthhome\\nthabout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B63AE34C-19FB-4921-BDCF-9149D6EC6925}|nthLesson8Annotation.csproj|d:\\netcore\\nguyentronghung_netcore_k23cnt3\\nthlesson8annotation\\controllers\\nthaccountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B63AE34C-19FB-4921-BDCF-9149D6EC6925}|nthLesson8Annotation.csproj|solutionrelative:controllers\\nthaccountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -30,11 +34,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "NthAbout.cshtml",
+              "DocumentMoniker": "D:\\NetCore\\NguyenTrongHung_NETCORE_K23CNT3\\nthLesson8Annotation\\Views\\NthHome\\NthAbout.cshtml",
+              "RelativeDocumentMoniker": "Views\\NthHome\\NthAbout.cshtml",
+              "ToolTip": "D:\\NetCore\\NguyenTrongHung_NETCORE_K23CNT3\\nthLesson8Annotation\\Views\\NthHome\\NthAbout.cshtml",
+              "RelativeToolTip": "Views\\NthHome\\NthAbout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-26T09:03:00.305Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "NthIndex.cshtml",
               "DocumentMoniker": "D:\\NetCore\\NguyenTrongHung_NETCORE_K23CNT3\\nthLesson8Annotation\\Views\\NthAccount\\NthIndex.cshtml",
               "RelativeDocumentMoniker": "Views\\NthAccount\\NthIndex.cshtml",
@@ -42,12 +59,11 @@
               "RelativeToolTip": "Views\\NthAccount\\NthIndex.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-10T16:10:36.539Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-10T16:10:36.539Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "_NthNavBar.cshtml",
               "DocumentMoniker": "D:\\NetCore\\NguyenTrongHung_NETCORE_K23CNT3\\nthLesson8Annotation\\Views\\Shared\\_NthNavBar.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_NthNavBar.cshtml",
@@ -55,12 +71,11 @@
               "RelativeToolTip": "Views\\Shared\\_NthNavBar.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-10T16:10:30.681Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-10T16:10:30.681Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "_NthLayout.cshtml",
               "DocumentMoniker": "D:\\NetCore\\NguyenTrongHung_NETCORE_K23CNT3\\nthLesson8Annotation\\Views\\Shared\\_NthLayout.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_NthLayout.cshtml",
@@ -68,12 +83,11 @@
               "RelativeToolTip": "Views\\Shared\\_NthLayout.cshtml",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-10T16:10:27.703Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-10T16:10:27.703Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "NthCreate.cshtml",
               "DocumentMoniker": "D:\\NetCore\\NguyenTrongHung_NETCORE_K23CNT3\\nthLesson8Annotation\\Views\\NthAccount\\NthCreate.cshtml",
               "RelativeDocumentMoniker": "Views\\NthAccount\\NthCreate.cshtml",
@@ -81,12 +95,11 @@
               "RelativeToolTip": "Views\\NthAccount\\NthCreate.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-10T16:07:08.169Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-10T16:07:08.169Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "NthAccountController.cs",
               "DocumentMoniker": "D:\\NetCore\\NguyenTrongHung_NETCORE_K23CNT3\\nthLesson8Annotation\\Controllers\\NthAccountController.cs",
               "RelativeDocumentMoniker": "Controllers\\NthAccountController.cs",

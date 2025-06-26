@@ -1,0 +1,68 @@
+﻿@model nthLesson10.Models.NthPost
+
+@{
+    ViewData["Title"] = "Chỉnh sửa bài viết";
+}
+
+<form asp-action="NthEdit" method="post" enctype="multipart/form-data">
+    <div class="card shadow-sm mx-auto mt-4" style="max-width: 700px;">
+        <div class="card-header bg-warning text-dark">
+            <h3 class="text-center">Chỉnh sửa bài viết</h3>
+        </div>
+
+        <div class="card-body">
+            <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+            <input type="hidden" asp-for="NthId" />
+
+            <div class="mb-3">
+                <label asp-for="NthTitle" class="form-label fw-semibold"></label>
+                <input asp-for="NthTitle" class="form-control" />
+                <span asp-validation-for="NthTitle" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label fw-semibold">Ảnh hiện tại</label><br />
+                @if (!string.IsNullOrEmpty(Model.NthImage))
+                {
+                    <img src="~/@Model.NthImage" alt="Ảnh hiện tại" class="img-thumbnail" style="max-height: 200px;" />
+                }
+                else
+                {
+                    <span>(Không có ảnh)</span>
+                }
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label fw-semibold">Chọn ảnh mới (nếu muốn thay)</label>
+                <input type="file" name="NthImage" class="form-control" />
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="NthContent" class="form-label fw-semibold"></label>
+                <textarea asp-for="NthContent" class="form-control" rows="4"></textarea>
+                <span asp-validation-for="NthContent" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="NthStatus" class="form-label fw-semibold"></label>
+                <select asp-for="NthStatus" class="form-select">
+                    <option value="true" selected="@(Model.NthStatus == true)">Hiển thị</option>
+                    <option value="false" selected="@(Model.NthStatus == false)">Ẩn</option>
+                </select>
+                <span asp-validation-for="NthStatus" class="text-danger"></span>
+            </div>
+        </div>
+
+        <div class="card-footer text-center">
+            <button type="submit" class="btn btn-primary">💾 Lưu thay đổi</button>
+            <a asp-action="NthIndex" class="btn btn-secondary">⬅️ Quay lại danh sách</a>
+        </div>
+    </div>
+</form>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

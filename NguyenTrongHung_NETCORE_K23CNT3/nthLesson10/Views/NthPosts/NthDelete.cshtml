@@ -1,0 +1,47 @@
+﻿@model nthLesson10.Models.NthPost
+
+@{
+    ViewData["Title"] = "Xoá bài viết";
+}
+
+<div class="card shadow-sm mx-auto mt-4" style="max-width: 700px;">
+    <div class="card-header bg-danger text-white text-center">
+        <h2>Xác nhận xoá bài viết</h2>
+    </div>
+
+    <div class="card-body">
+        <p class="text-danger fw-semibold text-center">Bạn có chắc chắn muốn xoá bài viết này không?</p>
+        <hr />
+
+        <dl class="row">
+            <dt class="col-sm-3">Tiêu đề</dt>
+            <dd class="col-sm-9">@Model.NthTitle</dd>
+
+            <dt class="col-sm-3">Hình ảnh</dt>
+            <dd class="col-sm-9">
+                @if (!string.IsNullOrEmpty(Model.NthImage))
+                {
+                    <img src="~/@Model.NthImage" class="img-thumbnail" style="max-height: 200px;" alt="Ảnh bài viết" />
+                }
+                else
+                {
+                    <span>(Không có hình ảnh)</span>
+                }
+            </dd>
+
+            <dt class="col-sm-3">Nội dung</dt>
+            <dd class="col-sm-9">@Model.NthContent</dd>
+
+            <dt class="col-sm-3">Trạng thái</dt>
+            <dd class="col-sm-9">
+                @(Model.NthStatus == true ? "Hiển thị" : "Ẩn")
+            </dd>
+        </dl>
+
+        <form asp-action="NthDelete" method="post" class="text-center mt-4">
+            <input type="hidden" asp-for="NthId" />
+            <button type="submit" class="btn btn-danger me-2">🗑️ Xoá</button>
+            <a asp-action="NthIndex" class="btn btn-secondary">⬅️ Quay lại danh sách</a>
+        </form>
+    </div>
+</div>
