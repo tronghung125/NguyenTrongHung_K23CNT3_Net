@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "D:\\NetCore\\NguyenTrongHung_NETCORE_K23CNT3\\nthLesson10\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{F19C6E4C-934F-4DA9-B6B3-C71D1F9F53E0}|nthLesson10.csproj|d:\\netcore\\nguyentronghung_netcore_k23cnt3\\nthlesson10\\views\\nthposts\\nthindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F19C6E4C-934F-4DA9-B6B3-C71D1F9F53E0}|nthLesson10.csproj|solutionrelative:views\\nthposts\\nthindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F19C6E4C-934F-4DA9-B6B3-C71D1F9F53E0}|nthLesson10.csproj|d:\\netcore\\nguyentronghung_netcore_k23cnt3\\nthlesson10\\views\\nthhome\\nthabout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F19C6E4C-934F-4DA9-B6B3-C71D1F9F53E0}|nthLesson10.csproj|solutionrelative:views\\nthhome\\nthabout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F19C6E4C-934F-4DA9-B6B3-C71D1F9F53E0}|nthLesson10.csproj|d:\\netcore\\nguyentronghung_netcore_k23cnt3\\nthlesson10\\views\\nthposts\\nthdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{F19C6E4C-934F-4DA9-B6B3-C71D1F9F53E0}|nthLesson10.csproj|solutionrelative:views\\nthposts\\nthdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -23,6 +31,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "NthIndex.cshtml",
+              "DocumentMoniker": "D:\\NetCore\\NguyenTrongHung_NETCORE_K23CNT3\\nthLesson10\\Views\\NthPosts\\NthIndex.cshtml",
+              "RelativeDocumentMoniker": "Views\\NthPosts\\NthIndex.cshtml",
+              "ToolTip": "D:\\NetCore\\NguyenTrongHung_NETCORE_K23CNT3\\nthLesson10\\Views\\NthPosts\\NthIndex.cshtml",
+              "RelativeToolTip": "Views\\NthPosts\\NthIndex.cshtml",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-02T02:13:00.143Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "NthAbout.cshtml",
+              "DocumentMoniker": "D:\\NetCore\\NguyenTrongHung_NETCORE_K23CNT3\\nthLesson10\\Views\\NthHome\\NthAbout.cshtml",
+              "RelativeDocumentMoniker": "Views\\NthHome\\NthAbout.cshtml",
+              "ToolTip": "D:\\NetCore\\NguyenTrongHung_NETCORE_K23CNT3\\nthLesson10\\Views\\NthHome\\NthAbout.cshtml",
+              "RelativeToolTip": "Views\\NthHome\\NthAbout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-07-02T01:39:53.809Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "NthDetails.cshtml",
               "DocumentMoniker": "D:\\NetCore\\NguyenTrongHung_NETCORE_K23CNT3\\nthLesson10\\Views\\NthPosts\\NthDetails.cshtml",
               "RelativeDocumentMoniker": "Views\\NthPosts\\NthDetails.cshtml",
@@ -30,12 +64,11 @@
               "RelativeToolTip": "Views\\NthPosts\\NthDetails.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-26T10:45:31.311Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-26T10:45:31.311Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "NthPostsController.cs",
               "DocumentMoniker": "D:\\NetCore\\NguyenTrongHung_NETCORE_K23CNT3\\nthLesson10\\Controllers\\NthPostsController.cs",
               "RelativeDocumentMoniker": "Controllers\\NthPostsController.cs",
@@ -43,8 +76,7 @@
               "RelativeToolTip": "Controllers\\NthPostsController.cs",
               "ViewState": "AgIAABcAAAAAAAAAAAAAACkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-26T09:50:37.533Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-26T09:50:37.533Z"
             }
           ]
         }

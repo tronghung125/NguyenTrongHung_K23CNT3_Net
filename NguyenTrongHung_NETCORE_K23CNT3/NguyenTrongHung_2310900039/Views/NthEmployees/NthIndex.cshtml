@@ -1,0 +1,49 @@
+﻿@model IEnumerable<NguyenTrongHung_2310900039.Models.NthEmployee>
+
+@{
+    ViewData["Title"] = "Danh sách nhân viên";
+}
+
+<h2 class="text-center my-4">@ViewData["Title"]</h2>
+
+<p>
+    <a asp-action="NthCreate" class="btn btn-success">➕ Thêm mới</a>
+</p>
+
+<table class="table table-bordered table-striped">
+    <thead class="table-dark">
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.First().NthEmpName)</th>
+            <th>@Html.DisplayNameFor(model => model.First().NthEmpLevel)</th>
+            <th>@Html.DisplayNameFor(model => model.First().NthEmpStartDate)</th>
+            <th>@Html.DisplayNameFor(model => model.First().NthEmpStatus)</th>
+            <th class="text-center">Thao tác</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.NthEmpName</td>
+                <td>@item.NthEmpLevel</td>
+                <td>@(item.NthEmpStartDate?.ToString("dd/MM/yyyy"))</td>
+                <td>
+                    @if (item.NthEmpStatus == true)
+                    {
+                        <span class="badge bg-success">Hiển thị</span>
+                    }
+                    else
+                    {
+                        <span class="badge bg-secondary">Tạm khóa</span>
+                    }
+                </td>
+
+                <td class="text-center">
+                    <a asp-action="NthDetails" asp-route-nthid="@item.NthEmpId" class="btn btn-info btn-sm">🔍 Xem</a>
+                    <a asp-action="NthEdit" asp-route-nthid="@item.NthEmpId" class="btn btn-warning btn-sm">✏️ Sửa</a>
+                    <a asp-action="NthDelete" asp-route-nthid="@item.NthEmpId" class="btn btn-danger btn-sm">🗑️ Xoá</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

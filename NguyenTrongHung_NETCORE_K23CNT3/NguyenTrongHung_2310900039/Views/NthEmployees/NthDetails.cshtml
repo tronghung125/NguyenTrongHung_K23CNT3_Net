@@ -1,0 +1,45 @@
+﻿@model NguyenTrongHung_2310900039.Models.NthEmployee
+
+@{
+    ViewData["Title"] = "Chi tiết nhân viên";
+}
+
+<div class="card shadow-sm mx-auto mt-4" style="max-width: 600px;">
+    <div class="card-header bg-primary text-white text-center">
+        <h3>@ViewData["Title"]</h3>
+    </div>
+
+    <div class="card-body">
+        <dl class="row">
+            <dt class="col-sm-4">Họ tên</dt>
+            <dd class="col-sm-8">@Model.NthEmpName</dd>
+
+            <dt class="col-sm-4">Trình độ</dt>
+            <dd class="col-sm-8">@Model.NthEmpLevel</dd>
+
+            <dt class="col-sm-4">Ngày bắt đầu</dt>
+            <dd class="col-sm-8">@Model.NthEmpStartDate?.ToString("dd/MM/yyyy")</dd>
+
+            <dt class="col-sm-4">Trạng thái</dt>
+            <dd class="col-sm-8">
+                @if (Model.NthEmpStatus == true)
+                {
+                    <span class="badge bg-success">Hiển thị</span>
+                }
+                else
+                {
+                    <span class="badge bg-secondary">Tạm khóa</span>
+                }
+            </dd>
+        </dl>
+    </div>
+
+    <div class="card-footer text-center">
+        <a asp-action="NthEdit" asp-route-nthId="@Model.NthEmpId" class="btn btn-warning me-2">
+            ✏️ Chỉnh sửa
+        </a>
+        <a asp-action="NthIndex" class="btn btn-secondary">
+            ⬅️ Quay lại danh sách
+        </a>
+    </div>
+</div>

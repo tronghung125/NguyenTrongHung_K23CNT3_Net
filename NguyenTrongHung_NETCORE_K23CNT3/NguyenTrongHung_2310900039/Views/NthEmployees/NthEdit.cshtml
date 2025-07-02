@@ -1,0 +1,57 @@
+﻿@model NguyenTrongHung_2310900039.Models.NthEmployee
+
+@{
+    ViewData["Title"] = "Chỉnh sửa nhân viên";
+}
+
+<div class="card shadow-sm mx-auto mt-4" style="max-width: 600px;">
+    <div class="card-header bg-warning text-dark">
+        <h4 class="text-center">@ViewData["Title"]</h4>
+    </div>
+
+    <div class="card-body">
+        <form asp-action="NthEdit">
+            <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+            <input type="hidden" asp-for="NthEmpId" />
+
+            <div class="mb-3">
+                <label asp-for="NthEmpName" class="form-label fw-semibold"></label>
+                <input asp-for="NthEmpName" class="form-control" placeholder="Nhập tên nhân viên" />
+                <span asp-validation-for="NthEmpName" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="NthEmpLevel" class="form-label fw-semibold"></label>
+                <input asp-for="NthEmpLevel" class="form-control" placeholder="Nhập cấp bậc" />
+                <span asp-validation-for="NthEmpLevel" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="NthEmpStartDate" class="form-label fw-semibold"></label>
+                <input asp-for="NthEmpStartDate" type="date" class="form-control" />
+                <span asp-validation-for="NthEmpStartDate" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="NthEmpStatus" class="form-label fw-semibold"></label>
+                <select asp-for="NthEmpStatus" class="form-select">
+                    <option value="true" selected="@Model.NthEmpStatus">Hiển thị</option>
+                    <option value="false" selected="!@Model.NthEmpStatus">Tạm ẩn</option>
+                </select>
+                <span asp-validation-for="NthEmpStatus" class="text-danger"></span>
+            </div>
+
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary">💾 Lưu thay đổi</button>
+                <a asp-action="NthIndex" class="btn btn-secondary ms-2">⬅️ Quay lại</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
